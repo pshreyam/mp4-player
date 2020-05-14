@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url("../assets/banner.jpg");
+  background-color: rgba(255, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/*Mp4 player*/
+
+.mp4 {
+  display: inline-block;
+  width: 20%;
+  height: 80%;
+  border: 1px solid #000;
+  box-shadow: 0 0 20px 0;
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  border-radius: 25px;
+  background-color: cornflowerblue;
+}
+
+.mp4-switch-button {
+  background-color: black;
+  display: inline-block;
+  width: 20%;
+  height: 4%;
+  border: 2px solid #000;
+  position: absolute;
+  top: 2.5%;
+  left: 40%;
+  border-radius: 10px;
+}
+
+#mp4-toggle-switch-button {
+  background-color: cornflowerblue;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#mp4-screen {
+  background-color: black;
+  display: inline-block;
+  width: 80%;
+  height: 40%;
+  border: 1px solid #000;
+  box-shadow: 0 0 5px 0;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 5%;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.mp4-button {
+  background-color: bisque;
+  display: inline-block;
+  width: 65%;
+  height: 35%;
+  border: 1px solid #000;
+  box-shadow: 0 0 20px 0;
+  position: absolute;
+  top: 55%;
+  left: 17.5%;
+  border-radius: 48%;
+}
+
+.mp4-center-button {
+  background-color: cornflowerblue;
+  display: inline-block;
+  width: 40%;
+  height: 40%;
+  border: 1px solid #000;
+  text-align: center;
+  box-shadow: 0 0 5px 0;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  border-radius: 50%;
+}
+
+.mp4-center-button:hover {
+  box-shadow: 0 0 10px 0;
+  cursor: pointer;
+}
+
+#menu {
+  position: absolute;
+  left: 42.5%;
+  top: 7.5%;
+  width: 15%;
+  height: 15%;
+}
+
+#prev {
+  position: absolute;
+  top: 42.5%;
+  left: 7.5%;
+  width: 15%;
+  height: 15%;
+}
+
+#next {
+  position: absolute;
+  top: 42.5%;
+  right: 7.5%;
+  width: 15%;
+  height: 15%;
+}
+
+#play-pause {
+  position: absolute;
+  left: 42.5%;
+  bottom: 7.5%;
+  width: 15%;
+  height: 15%;
+}
+
+.individual-buttons:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .mp4 {
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    width: 60vw;
+    height: 80vh;
+  }
+}
+
+.song-entry {
+  padding: 5px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song-entry:hover {
+  cursor: pointer;
+  background-color: #aaaaaa;
+  border-radius: 3px;
+}
+
+.song-entry.highlighted {
+  background-color: #cccccc;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.song-number {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.remove-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.remove-button:active {
+  transform: scale(0.95);
+}

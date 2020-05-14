@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
+    <script src="static/script.js" defer></script>
+    <title>MP4 Player</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <audio src="music/sample.mp3" id="audio"></audio>
+      <div class="mp4">
+        <div class="mp4-switch-button">
+          <div id="mp4-toggle-switch-button" onclick="OnOffFunction()"></div>
+        </div>
+        <div id="mp4-screen"></div>
+        <div class="mp4-button">
+          <img
+            class="individual-buttons"
+            src="assets/menu.png"
+            id="menu"
+            onclick="addSongToPlaylist()"
+            title="Add songs to playlist"
+          />
+          <img
+            class="individual-buttons"
+            src="assets/prev.png"
+            id="prev"
+            onclick="prevSong()"
+            title="Play the previous song"
+          />
+          <img
+            class="individual-buttons"
+            src="assets/play.png"
+            id="play-pause"
+            onclick="togglePlayPause()"
+            title="Play/Pause the current song"
+          />
+          <img
+            class="individual-buttons"
+            src="assets/next.png"
+            id="next"
+            onclick="nextSong()"
+            title="Skip to the next song"
+          />
+          <div class="mp4-center-button" id="central-button"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
